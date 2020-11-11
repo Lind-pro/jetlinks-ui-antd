@@ -54,7 +54,7 @@ const UserLayout: React.FC<UserLayoutProps> = props => {
                 <span className={styles.title}>JetLinks </span>
               </Link>
             </div>
-            <div className={styles.desc}>捷联物联网平台</div>
+            <div className={styles.desc}>运行维护管理系统</div>
           </div>
           {children}
         </div>

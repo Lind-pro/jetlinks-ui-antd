@@ -27,7 +27,19 @@ const SettingModel: SettingModelType = {
   state: {},
   effects: {
     *fetchConfig({ payload, callback }, { call, put }) {
-      const response: any = yield call(apis.systemConfig.list);
+      // const response: any = yield call(apis.systemConfig.list);
+      const response = {
+        "result":
+        {
+          "primaryColor": "#1890ff", "layout": "sidemenu", "contentWidth": "Fluid",
+          "fixedHeader": false, "autoHideHeader": false,
+          "fixSiderbar": false, "colorWeak": false,
+          "pwa": false, "iconfontUrl": "",
+          "title": "运行维护管理系统",
+          "menu": { "locale": true },
+          "navTheme": "dark"
+        }, "status": 200, "code": "success"
+      };
       callback(response.result);
       if (response.status === 200) {
         const tempSetting = Object.keys(response.result).length === 0 ? defaultSettings : response.result;

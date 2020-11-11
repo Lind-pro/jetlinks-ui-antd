@@ -96,8 +96,8 @@ const Login: React.FC<Props> = props => {
 
       <div className={style.bg1} />
       <div className={style.gyl}>
-        物联网平台
-        <div className={style.gy2}>MQTT TCP CoAP HTTP , 多消息协议适配 , 可视化规则引擎
+        运行维护管理系统
+        <div className={style.gy2}>
         </div>
       </div>
       {/* style={{ height: enable ? '387px' : '330px' }} */}
